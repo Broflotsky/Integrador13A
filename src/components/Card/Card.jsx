@@ -1,4 +1,5 @@
 import styles from "./Card.module.css";
+import { Link } from "react-router-dom";
 
 export default function Card(props) {
   const { id, name, status, species, gender, origin, image, onClose } = props;
@@ -13,7 +14,9 @@ export default function Card(props) {
         X
       </button>
       <div className={styles.wrapperText}>
-        <h1 className={styles.name}>{name}</h1>
+        <Link to={`/detail/${id}`}>
+          <h1 className={styles.name}>{name}</h1>
+        </Link>
         <div className={styles.details}>
           <h2>{status}</h2>
           <h2>{species}</h2>
