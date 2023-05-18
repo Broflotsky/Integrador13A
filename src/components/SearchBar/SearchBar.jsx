@@ -5,6 +5,7 @@ export default function SearchBar(props) {
   const { onSearch } = props;
 
   const [id, setId] = useState("");
+  
   const handleChange = (e) => {
     setId(e.target.value);
   };
