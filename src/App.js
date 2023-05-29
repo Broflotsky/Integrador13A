@@ -10,6 +10,7 @@ import Nav from './components/Nav/Nav.jsx';
 import About from './components/About/About.jsx';
 import Form from './components/Form/Form';
 import Detail from './components/Detail/Detail';
+import Favorites from './components/Favorites/Favorites';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
             <Route path={'/'} element={<Form login={login} />} />
             <Route path={'/home'} element={<Cards characters={characters} onClose={onClose} />} />
             <Route path={'/about'} element={<About />} />
+            <Route path='/favorites' element={<Favorites />} />
             <Route path='/detail/:id' element={<Detail />} />
          </Routes>
 

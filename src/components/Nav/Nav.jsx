@@ -10,6 +10,7 @@ const Nav = (props) => {
     <div>
       <Link to={ROUTES.HOME}>Home</Link>
       <Link to={ROUTES.ABOUT}>About</Link>
+      <Link to={"/favorites"}>Favorites</Link>
       <SearchBar onSearch={onSearch} />
     </div>
   );
